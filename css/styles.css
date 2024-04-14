@@ -33,3 +33,9 @@
       order: 0;
     }
   }
+  .main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4em;
+  }
