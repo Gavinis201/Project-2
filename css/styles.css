@@ -1,50 +1,40 @@
 :root {
-    --primary: #e6e0d4;
-    --secondary: #e63232;
+    --primary: #ed880d;
+    --secondary: #918e8c;
     --third: #17191c;
-
-
-
-
 }
-
-
-
-
-
-
 
 .grid {
     display: grid;
-    gap: 10px;
     grid-template-columns: 1fr 3fr 1fr;
     height: 80vh;
+    
   }
-  .main {
+  .sports {
     background: var(--secondary);
-    order: 2;
+    border: 3px solid black;
   }
-  .side {
-    background: var(--third);
-    order: 3;
+  .left-side {
+    background: var(--secondary);
+    border: 3px solid black;
   }
-  .list {
-    background: var(--third);
-    order: 1;
-  }
-  .main,
-  .side,
-  .list {
-    padding: 2%;
-    border-radius: 10px
+  .right-side {
+    background: var(--secondary);
+    border: 3px solid black;
   }
   
-  .main-container{
+  .images{
     display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 2em;
+    padding: 20px;
   }
-  .card-body {
-    margin-bottom: 0;
+ .card-body{
+    padding: 10px;
+ }
+  .navbar{
+    background-color: var(--primary)
   }
+  
+  
