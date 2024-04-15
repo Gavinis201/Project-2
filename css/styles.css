@@ -1,5 +1,5 @@
 
-=======
+
 :root {
     --primary:#333333 ;
     --secondary: #c35353;
@@ -126,4 +126,4 @@
     grid-row-start: 3;
     grid-column-start: 2;
     grid-column-end: 5;
-
+}
