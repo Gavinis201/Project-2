@@ -1,4 +1,66 @@
 
+=======
+:root {
+    --primary:#333333 ;
+    --secondary: #c35353;
+    --third: white  ;
+}
+
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 140vh;
+    background-color: var(--primary);
+    
+    
+  }
+  .sports {
+    background: var(--secondary);
+    border-radius: 20px;
+    
+  }
+  .left-side {
+    background: var(--secondary);
+    border-radius: 20px;
+    
+  }
+  .right-side {
+    background: var(--secondary);
+    border-radius: 20px;
+    
+  }
+  
+  .images{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+ .card-body{
+    padding: 10px;
+ }
+  .navbar{
+    background-color: var(--primary) !important
+  }
+  .button-stats {
+    background-color: var(--primary);
+    color: white;
+    width: 10em;
+    border: none;
+  }
+  .button-stats:hover{
+    background-color: white;
+    color: var(--primary);
+    font-weight: bolder;
+  }
+
+
+
 
 
 /* Stats Page */
@@ -64,4 +126,4 @@
     grid-row-start: 3;
     grid-column-start: 2;
     grid-column-end: 5;
-}
+
