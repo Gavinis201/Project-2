@@ -56,3 +56,71 @@
     color: var(--primary);
     font-weight: bolder;
   }
+
+
+
+
+/* Stats Page */
+
+@media screen and (max-width: 1200px) {
+
+    #content{
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    }
+
+    #side-news{
+        display: none;
+   }
+
+   #side-sort{
+        display: none;
+   }
+}
+
+/*Dunno what styling we want; I'll wait for index and copy that.*/
+.navbar-custom{
+    background-color: bisque;
+    /* font settings */
+}
+
+.no-h-margin{
+    margin-left:0% !important;
+    margin-right: 0% !important;
+}
+
+.no-padding{
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+}
+
+.card-text{
+    padding-bottom: 1em;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 5% 30% 5% auto 5%;
+    grid-template-rows: 4rem auto;
+}
+
+.content-button{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#content-logo{
+    grid-column-start: 4;
+}
+
+#content-hr{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+#content-table{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
