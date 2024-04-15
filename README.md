@@ -46,3 +46,74 @@ must disclose it in the comments of your code with a date stamp and the
 prompt you provided the AI with. In general, you may use AI to help you with
 the design of your website, but the content must be original and created by
 you.
+
+
+"Team Name": {
+    "name": "string",
+    "abbreviation": "string",
+    "logo_light": "string",
+    "logo_dark": "string",
+    "id": "string",
+    "location": "string",
+    "roster": {
+        "Player Name": {
+            "name": "string",
+            "weight": "string",
+            "height": "string",
+            "age": number,
+            "birthplace": "string",
+            "jersey": "string",
+            "position_abbr": "string",
+            "position_full": "stringd"
+        }, 
+    },
+    "statistics": {
+        "avgRebounds": {
+            "displayName": "string",
+            "shortDisplayName": "string",
+            "value": number
+        },
+        "assistTurnoverRatio": {
+        },
+        "avgFouls": {
+        },
+        "freeThrowPct": {
+        },
+        "threePointPct": {
+        },
+        "avgPoints": {
+        },
+        "avgAssists": {
+        },
+        "avgTurnovers": {
+        },
+        "fieldGoalPct": {
+        },
+        "avgBlocks": {
+        },
+        "avgSteals": {
+        }
+    },
+    "last_five_games": {
+        "2024-04-07": {
+            "game_date": "string",
+            "game_title": "string",
+            "short_title": "string",
+            "game_cast": "string",
+            "home_team": {
+                "team_name": "string",
+                "team_name_abbreviation": "string",
+                "score": number,
+                "record": "string"
+            },
+            "away_team": {
+                "team_name": "string",
+                "team_name_abbreviation": "string",
+                "score": number,
+                "record": "string"
+            }
+        },
+    },
+    "current_record": "string"
+    },
+}
