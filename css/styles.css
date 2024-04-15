@@ -7,23 +7,26 @@
 
 .grid {
     display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 3fr 1fr;
-    height: 80vh;
+    height: 140vh;
+    background-color: var(--primary);
+    
     
   }
   .sports {
     background: var(--secondary);
-    border: 10px solid var(--primary);
+    border-radius: 20px;
     
   }
   .left-side {
     background: var(--secondary);
-    border: 10px solid var(--primary);
+    border-radius: 20px;
     
   }
   .right-side {
     background: var(--secondary);
-    border: 10px solid var(--primary);
+    border-radius: 20px;
     
   }
   
