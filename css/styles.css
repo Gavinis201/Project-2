@@ -1,8 +1,9 @@
 :root {
     --primary:#333333 ;
     --secondary: #c35353;
-    --third: white  ;
+    --third: white;
 }
+
 
 
 .grid {
@@ -35,15 +36,16 @@
     gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     box-sizing: border-box;
   }
  .card-body{
-    padding: 10px;
+    padding: 20px;
  }
   .navbar{
     background-color: var(--primary) !important
+    
   }
   .button-stats {
     background-color: var(--primary);
@@ -54,13 +56,67 @@
   .button-stats:hover{
     background-color: white;
     color: var(--primary);
+  
+  }
+  .button-submit{
+    background-color: white;
+    color: var(--primary);
     font-weight: bolder;
+    border: none;
+  }
+  
+  .button-submit:hover {
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid white;
+  }
+  .card{
+    margin: 20px;
+
   }
 
+  h1{
+  display: flex;
+  justify-content: center;
+}
+h3{
+  display: flex;
+  justify-content: center;
+}
 
+.card-img-top:hover{
+box-shadow: yellow;
+}
 
+.warriors{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  color: var(--primary);
+  text-decoration: none;
+}
 
+.nba-logo:hover {
+  animation: popUp 1s ease-in-out forwards;
+}
 
+@keyframes popUp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.card-photo{
+  background-color: white;
+  height: 200px;
+}
+.lebron {
+  aspect-ratio: 11 / 9;
+  height: 400px;
+  width: 350px;
+  margin: 20px;
+  border-radius: 20px;
+}
 /* Stats Page */
 
 @media screen and (max-width: 1200px) {
@@ -81,8 +137,19 @@
 
 /*Dunno what styling we want; I'll wait for index and copy that.*/
 .navbar-custom{
-    background-color: bisque;
-    /* font settings */
+    background-color: var(--primary);
+    height: 10vh;
+    color: white;
+    
+}
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  
+  background-color: var(--primary);
+  height: 10vh;
+  color: white;
+  
 }
 
 .no-h-margin{
@@ -124,4 +191,12 @@
     grid-row-start: 3;
     grid-column-start: 2;
     grid-column-end: 5;
+}
+
+.spacing {
+  margin-left: 2em;
+}
+.card-img-top:hover{
+  box-shadow: 0px 0px 15px 15px  gold;
+  cursor: pointer;
 }
