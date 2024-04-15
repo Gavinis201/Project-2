@@ -45,5 +45,14 @@
   .navbar{
     background-color: var(--primary) !important
   }
-  .
-  
+  .button-stats {
+    background-color: var(--primary);
+    color: white;
+    width: 10em;
+    border: none;
+  }
+  .button-stats:hover{
+    background-color: white;
+    color: var(--primary);
+    font-weight: bolder;
+  }
