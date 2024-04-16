@@ -92,9 +92,22 @@ function doTheThingHarold(inputData) {
         document.getElementById("team-dropdown").appendChild(item);
         document.getElementById("team-dropdown").appendChild(divider);
     }
+    
+    selectedTeam = inputData["Denver Nuggets"];
 
+    for (player in selectedTeam.roster) {
+        const thing = document.createElement("p");
+        thing.innerHTML = player;
+
+            for (indStat in selectedTeam.roster[player]) {
+                console.log(selectedTeam.roster[player][indStat]);
+
+            }
+
+        document.getElementById("content-table").appendChild(thing);
+    }
 }
-/*    selectedTeam = inputData["Denver Nuggets"];
+/*
     
     document.getElementById("record-number").innerHTML = selectedTeam["current_record"];
     document.getElementById("rebound-number").innerHTML = selectedTeam.statistics.avgRebounds.value;
