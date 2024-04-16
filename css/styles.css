@@ -54,7 +54,6 @@
  }
   .navbar{
     background-color: var(--primary) !important
-    
   }
   .button-stats {
     background-color: var(--primary);
@@ -171,6 +170,12 @@ h3{
   display: flex;
   justify-content: center;
 }
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
 
 .card-img-top:hover{
 box-shadow: yellow;
@@ -200,11 +205,37 @@ box-shadow: yellow;
 }
 .lebron {
   aspect-ratio: 11 / 9;
-  height: 400px;
-  width: 350px;
+  height: 270px;
+  width: 250px;
   margin: 20px;
   border-radius: 20px;
 }
+
+.footer-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  height: 10vh;
+}
+
+.ballers{
+  padding: 2em;
+  height: 550px;
+  width: 90%;
+  box-shadow: 5px 5px 10px;
+  
+
+}
+
+
+
+
+
+
+
+
 /* Stats Page */
 
 @media screen and (max-width: 1200px) {
