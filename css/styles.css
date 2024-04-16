@@ -10,7 +10,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 3fr 1fr;
-    height: 140vh;
+    height: 200vh;
     background-color: var(--primary);
     
     
@@ -45,7 +45,6 @@
  }
   .navbar{
     background-color: var(--primary) !important
-    
   }
   .button-stats {
     background-color: var(--primary);
@@ -82,7 +81,14 @@
 h3{
   display: flex;
   justify-content: center;
+  margin-top: 5px;
 }
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
 
 .card-img-top:hover{
 box-shadow: yellow;
@@ -112,11 +118,37 @@ box-shadow: yellow;
 }
 .lebron {
   aspect-ratio: 11 / 9;
-  height: 400px;
-  width: 350px;
+  height: 270px;
+  width: 250px;
   margin: 20px;
   border-radius: 20px;
 }
+
+.footer-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  height: 10vh;
+}
+
+.ballers{
+  padding: 2em;
+  height: 550px;
+  width: 90%;
+  box-shadow: 5px 5px 10px;
+  
+
+}
+
+
+
+
+
+
+
+
 /* Stats Page */
 
 @media screen and (max-width: 1200px) {
@@ -138,18 +170,25 @@ box-shadow: yellow;
 /*Dunno what styling we want; I'll wait for index and copy that.*/
 .navbar-custom{
     background-color: var(--primary);
-    height: 10vh;
+    height: 15vh;
     color: white;
     
 }
 .navbar-nav{
   display: flex;
   align-items: center;
-  
   background-color: var(--primary);
-  height: 10vh;
   color: white;
-  
+  font-size: 1.2em;
+  text-decoration: solid;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+
+}
+.navbar-nav:hover{
+  background-color: white;
+  border-radius: 10px;
 }
 
 .no-h-margin{

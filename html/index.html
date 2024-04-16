@@ -4,12 +4,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sports N' Stuff</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports N' Stuff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -22,11 +23,11 @@
       </button>
       <div class="collapse navbar-collapse spacing" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link  navbar-nav " aria-current="page" href="index.html">Home</a>
+          <li class="nav-item  ">
+            <a class="nav-link  navbar-nav  " aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  navbar-nav" href="./stats.html">Stats</a>
+          <li class="nav-item  ">
+            <a class="nav-link  navbar-nav " href="./stats.html">Stats</a>
           </li>
         </ul>
 
@@ -39,9 +40,10 @@
     </div>
   </nav>
 <!-- This is going to be the main page where there will be like the welcome... -->
+
 <div class="grid">
     <section class="left-side">
-      <h1>Quick Links</h1>
+      <h3>Quick Links</h3>
       <hr>
       <div class="card">
         <a href="" class="warriors"><div class="card-body ">Golden State Warriors</div></a>
@@ -61,11 +63,38 @@
       <hr>
       <h3>Picture Perfect</h3>
       <div >
+        <img src="../assets/jason.png" alt="Lebron James" class="lebron">
+      </div>
+      <div >
         <img src="../assets/Lebron.png" alt="Lebron James" class="lebron">
+      </div>
+      <div >
+        <img src="../assets/clay.png" alt="Lebron James" class="lebron">
       </div>
     </section>
     <section class="sports">
-      <h1>Favorite NBA teams</h1>
+      <h2>Favorite NBA teams</h2>
+      <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active   " data-bs-interval="5000">
+            <img src="../assets/curry.png" class="d-block w-100 ballers" alt="steph curry">
+          </div>
+          <div class="carousel-item " data-bs-interval="5000">
+            <img src="../assets/lebronDunk.png" class="d-block w-100  ballers" alt="lebron james">
+          </div>
+          <div class="carousel-item " data-bs-interval="5000">
+            <img src="../assets/clarkson.png" class="d-block w-100 ballers" alt="clarkson">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div class="sports-container">
         <div class="images">
             <div class="card-1">
@@ -106,7 +135,7 @@
 
     </section>
     <section class="right-side">
-      <h1>Top Headlines</h1>
+      <h3>Top Headlines</h3>
       <hr>
       <div class="card">
         <div class="card-body">
@@ -116,29 +145,27 @@
       <hr>
       <div class="card">
         <div class="card-body">
-          
-"Listen up, America! When I tell you the Lakers are back, I mean they are BACK! LeBron James is out there playing like a man possessed, and you better believe it's championship or bust for the Purple and Gold. Get ready for some Showtime, baby!" - Steven A Smith
+        "Listen up, America! When I tell you the Lakers are back, I mean they are BACK! LeBron James is out there playing like a man possessed, and you better believe it's championship or bust for the Purple and Gold. Get ready for some Showtime, baby!" - Steven A Smith
         </div>
       </div>
+      <hr>
       <div class="card">
         <div class="card-body">
-          This is some text within a card body.
+          "The Utah Jazz are a symphony of basketball brilliance, orchestrating victories with finesse and precision. With every game, they prove why they're the unrivaled masters of the court."
         </div>
       </div>
+      <hr>
       <div class="card">
         <div class="card-body">
-          This is some text within a card body.
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          This is some text within a card body.
+        "The Boston Celtics embody the spirit of champions, weaving a legacy as storied as the parquet floor beneath their feet. With every dunk and swish, they paint a masterpiece of teamwork and determination, proving once again why they're the heartbeat of basketball in the city of champions."
         </div>
       </div>
     </section>
-  </div>
-
-  <!-- at the top of this page there will be a tab to click called stats where the user can go and see the stats from the sports and stuff api -->
+</div>
+<footer class="  border-success  p-3 footer-center">
+  Sports N' Stuff &copy;
+</footer>
+<!-- at the top of this page there will be a tab to click called stats where the user can go and see the stats from the sports and stuff api -->
 
 
 </body>
