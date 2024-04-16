@@ -25,14 +25,15 @@ function doTheThingHarold(inputData) {
 
     for (player in selectedTeam.roster) {
         const thing = document.createElement("p");
-        thing.innerHTML = player;
 
             for (indStat in selectedTeam.roster[player]) {
-                console.log(selectedTeam.roster[player][indStat]);
-
+                const playerstat = document.createElement("span")
+                playerstat.innerHTML = (selectedTeam.roster[player][indStat] + " -- ");
+                thing.appendChild(playerstat);
             }
 
         document.getElementById("content-table").appendChild(thing);
+        document.getElementById("content-table").innerHTML.slice(0,-4);
     }
 }
 /*
