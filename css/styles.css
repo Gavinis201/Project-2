@@ -2,11 +2,20 @@
 
 :root {
     --primary:#333333 ;
-    --secondary: #c35353;
+    --secondary: #1DB954;
     --third: white;
+    --primary-font: 'trebuchet MS', sans-serif;
 }
 
+body {
+  font-family: var(--primary-font);
+}
 
+h1,
+h2,
+h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .grid {
     display: grid;
