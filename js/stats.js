@@ -1,43 +1,48 @@
-fetch (
-    "https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData"
-)
+fetch("https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData")
     .then((response) => response.json())
     .then((data) => doTheThingHarold(data));
 
-
 function doTheThingHarold(inputData) {
 
-    for (team in inputData) {
+    for (let team in inputData) {
         const item = document.createElement("li");
-        const anchor = document.createElement("a");
-            anchor.classList.add("dropdown-item");
-            anchor.innerHTML = team;
-        item.appendChild(anchor);
+        item.classList.add("dropdown-item");
+        item.innerHTML = team;
+        item.addEventListener("click", (function(team) {
+            return function() {
+                filterData(inputData[team]);
+            };
+        })(team));
 
         const divider = document.createElement("div");
-            divider.classList.add("dropdown-divider");
+        divider.classList.add("dropdown-divider");
 
         document.getElementById("team-dropdown").appendChild(item);
         document.getElementById("team-dropdown").appendChild(divider);
     }
-    
-    selectedTeam = inputData["Denver Nuggets"];
+}
 
+const tableData = document.getElementById("content-table").outerHTML;
+
+function filterData(selectedTeam) {
+    document.getElementById("content-table").innerHTML = tableData;
+    console.log(selectedTeam);
     for (player in selectedTeam.roster) {
         const thing = document.createElement("tr");
 
-            for (indStat in selectedTeam.roster[player]) {
-                const playerstat = document.createElement("td")
-                playerstat.innerHTML = (selectedTeam.roster[player][indStat]);
-                thing.appendChild(playerstat);
-            }
+        for (indStat in selectedTeam.roster[player]) {
+            const playerstat = document.createElement("td")
+            playerstat.innerHTML = selectedTeam.roster[player][indStat];
+            thing.appendChild(playerstat);
+        }
 
         document.getElementById("content-table").appendChild(thing);
-
     }
 }
+
 /*
     
+    document.getElementById("team-name").innerHTML = selectedTeam["name"];
     document.getElementById("record-number").innerHTML = selectedTeam["current_record"];
     document.getElementById("rebound-number").innerHTML = selectedTeam.statistics.avgRebounds.value;
     document.getElementById("point-number").innerHTML = selectedTeam.statistics.avgPoints;
