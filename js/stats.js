@@ -24,16 +24,16 @@ function doTheThingHarold(inputData) {
     selectedTeam = inputData["Denver Nuggets"];
 
     for (player in selectedTeam.roster) {
-        const thing = document.createElement("p");
+        const thing = document.createElement("tr");
 
             for (indStat in selectedTeam.roster[player]) {
-                const playerstat = document.createElement("span")
-                playerstat.innerHTML = (selectedTeam.roster[player][indStat] + " -- ");
+                const playerstat = document.createElement("td")
+                playerstat.innerHTML = (selectedTeam.roster[player][indStat]);
                 thing.appendChild(playerstat);
             }
 
         document.getElementById("content-table").appendChild(thing);
-        document.getElementById("content-table").innerHTML.slice(0,-4);
+
     }
 }
 /*
