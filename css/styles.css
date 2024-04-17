@@ -28,8 +28,13 @@ h3 {
   .grid-stats{
     display: grid;
     gap: 20px;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
     height: 200vh;
+=======
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 120vh;
+>>>>>>> 63b1e54 (finished the css for the stats page)
     background-color: var(--primary);
     
   }
@@ -225,8 +230,7 @@ box-shadow: yellow;
   height: 200px;
 }
 .lebron {
-  aspect-ratio: 11 / 9;
-  height: 270px;
+  height: 300px;
   width: 250px;
   margin: 20px;
   border-radius: 20px;
@@ -258,9 +262,7 @@ box-shadow: yellow;
   
 
 }
-.balles{
-  background-color: white;
-}
+
 
 
 
@@ -385,6 +387,7 @@ box-shadow: yellow;
   display: flex;
   justify-content: center;
   font-size: 5em;
+<<<<<<< HEAD
 }
 .grid-highlights{
   display: grid;
@@ -456,3 +459,6 @@ box-shadow: yellow;
   padding: 10px;
   margin-left: 60px;
 }
+=======
+}
+>>>>>>> 63b1e54 (finished the css for the stats page)
