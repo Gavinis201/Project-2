@@ -13,6 +13,13 @@
     height: 200vh;
     background-color: var(--primary);
     
+  }
+  .grid-stats{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 120vh;
+    background-color: var(--primary);
     
   }
   .sports {
@@ -117,8 +124,7 @@ box-shadow: yellow;
   height: 200px;
 }
 .lebron {
-  aspect-ratio: 11 / 9;
-  height: 270px;
+  height: 300px;
   width: 250px;
   margin: 20px;
   border-radius: 20px;
@@ -150,9 +156,7 @@ box-shadow: yellow;
   
 
 }
-.balles{
-  background-color: white;
-}
+
 
 
 
@@ -246,7 +250,35 @@ box-shadow: yellow;
 .spacing {
   margin-left: 2em;
 }
-.card-img-top:hover{
+.hoop:hover{
   box-shadow: 0px 0px 15px 15px  gold;
   cursor: pointer;
+}
+.shadows:hover {
+  box-shadow: 0px 0px 15px ;
+}
+.teams-size:hover{
+  font-size: 1.1em;
+}
+.players-margin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; 
+  height: 50px;
+  padding: 25px;
+}
+.order66{
+  height: 30vh;
+}
+
+.record{
+  height: 30vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.record-text{
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
 }
