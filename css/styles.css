@@ -338,7 +338,7 @@ box-shadow: yellow;
   border-radius: 20px;
 }
 
-.footer-center{
+.footer-index{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,6 +346,15 @@ box-shadow: yellow;
   color: white;
   height: 10vh;
 }
+.footer-stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  margin-top: 80vh;
+}
+
 
 .ballers{
   padding: 2em;
