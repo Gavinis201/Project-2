@@ -10,7 +10,7 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 3fr 1fr;
-    height: 200vh;
+    height: 210vh;
     background-color: var(--primary);
     
   }
