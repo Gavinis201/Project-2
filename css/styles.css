@@ -21,7 +21,12 @@ h3 {
     display: grid;
     grid-template-columns: 300px 1fr 300px;
     gap: 20px;
+<<<<<<< HEAD
     height: 200vh;
+=======
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 210vh;
+>>>>>>> 1292d9b (fixed linking the html pages together)
     background-color: var(--primary);
     
   }
