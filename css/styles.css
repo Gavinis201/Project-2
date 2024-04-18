@@ -11,7 +11,7 @@
 .grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 500px 3fr 500px;
     height: 220vh;
     background-color: var(--primary);
     
@@ -19,7 +19,7 @@
   .grid-stats{
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 500px 3fr 500px;
     height: 120vh;
     background-color: var(--primary);
     
@@ -43,8 +43,8 @@
   .images{
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 500px 500px;
     padding: 20px;
     margin: 20px;
     box-sizing: border-box;
@@ -283,4 +283,32 @@ box-shadow: yellow;
   display: flex;
   justify-content: center;
   font-size: 5em;
+}
+/* HIGHLIGHTS PAGE CSS */
+
+
+.grid-highlights{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 500px 500px;
+}
+.king {
+  background-color: var(--secondary);
+  border: 1px solid black;
+}
+
+.king1{
+  grid-column: 1 / 3;
+  height: 10vh;
+}
+
+
+.lebron.size{
+  width: 720px;
+  height: 620px;
+}
+.video{
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
 }
