@@ -37,9 +37,13 @@ h3 {
 =======
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+<<<<<<< HEAD
 >>>>>>> 877acdf (fixing the grid for all the pages)
     height: 220vh;
 >>>>>>> c28ade5 (footer edit height)
+=======
+    height: 200vh;
+>>>>>>> 6b7bd68 (fixed the html for the index.html)
     background-color: var(--primary);
     
   }
@@ -67,21 +71,25 @@ h3 {
   .sports {
     background: var(--secondary);
     border-radius: 20px;
+    width: 800px;
     
   }
   .left-side {
     background: var(--secondary);
     border-radius: 20px;
+    width: auto;
     
   }
   .right-side {
     background: var(--secondary);
     border-radius: 20px;
+    width: auto;
     
   }
   
   .images{
     display: grid;
+<<<<<<< HEAD
 <<<<<<< HEAD
     grid-template-columns: 300px 300px;
     grid-template-rows: 300px 300px;
@@ -91,6 +99,11 @@ h3 {
     grid-template-columns: 500px 500px;
     grid-template-rows: 500px 500px;
 >>>>>>> 94331fe (added highlights and videos)
+=======
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+>>>>>>> 6b7bd68 (fixed the html for the index.html)
     padding: 20px;
     margin: 20px;
     box-sizing: border-box;
@@ -161,8 +174,97 @@ box-shadow: yellow;
   transition: transform 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 .nba-logo:hover {
   animation: popUp 0.5s ease-in-out forwards;
+}
+
+@keyframes popUp {
+  0%, 100% { transform: translateY(0); }
+  25%, 75% { transform: translateY(-10px); }
+  50% { transform: translateY(-5px); }
+}
+
+.card-photo{
+  background-color: white;
+  height: 200px;
+}
+.lebron {
+  height: 300px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.footer-index{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  height: 10vh;
+}
+.footer-stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  margin-top: 80vh;
+}
+
+
+.ballers{
+  padding: 2em;
+  height: 550px;
+  width: 90%;
+  box-shadow: 5px 5px 10px;
+  
+
+}
+
+
+
+
+  h1{
+  display: flex;
+  justify-content: center;
+}
+h3{
+  display: flex;
+  justify-content: center;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+
+.card-img-top:hover{
+box-shadow: yellow;
+}
+
+.warriors{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+=======
+>>>>>>> 6b7bd68 (fixed the html for the index.html)
+.nba-logo:hover {
+  animation: popUp 0.5s ease-in-out forwards;
+}
+
+.sports-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
 }
 
 @keyframes popUp {
@@ -247,86 +349,6 @@ box-shadow: yellow;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 20px;
-  gap: 20px;
-}
-
-@keyframes popUp {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-50px); }
-  100% { transform: translateY(0); }
-}
-
-.card-photo{
-  background-color: white;
-  height: 200px;
-}
-.lebron {
-  height: 300px;
-  width: 250px;
-  margin: 20px;
-  border-radius: 20px;
-}
-
-.footer-index{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary); 
-  color: white;
-  height: 10vh;
-}
-.footer-stats{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary); 
-  color: white;
-  margin-top: 80vh;
-}
-
-
-.ballers{
-  padding: 2em;
-  height: 550px;
-  width: 90%;
-  box-shadow: 5px 5px 10px;
-  
-
-}
-
-
-
-
-  h1{
-  display: flex;
-  justify-content: center;
-}
-h3{
-  display: flex;
-  justify-content: center;
-}
-h2{
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-}
-
-
-.card-img-top:hover{
-box-shadow: yellow;
-}
-
-.warriors{
-  display: flex;
-  justify-content: center;
-  font-size: 1.2em;
-  color: var(--primary);
-  text-decoration: none;
-}
-
-.nba-logo:hover {
-  animation: popUp 1s ease-in-out forwards;
 }
 
 @keyframes popUp {
