@@ -69,6 +69,7 @@
           <input class="form-control me-2" type="search" placeholder="Password" aria-label="Search">
           <a href="./stats.html" class="btn btn-primary button-submit">Login</a>
         </form> -->
+<<<<<<< HEAD
         <div id="user-login">
           <form class="d-flex" id="login-form" role="search" onsubmit="return validateLogin(event)">
             <input class="form-control me-2" type="text" placeholder="Username" aria-label="Search" id="username">
@@ -77,6 +78,13 @@
           </form>
           <h3 id="user-email"></h3>
         </div>
+=======
+        <form class="d-flex" role="search" onsubmit="return validateLogin(event)">
+          <input class="form-control me-2" type="text" placeholder="Username" aria-label="Search" id="username">
+          <input class="form-control me-2" type="password" placeholder="Password" aria-label="Search" id="password">
+          <button type="submit" class="btn btn-primary button-submit">Login</button>
+        </form>
+>>>>>>> fb8a04c (username & password feature)
 
       </div>
     </div>
@@ -421,6 +429,24 @@
     Sports N' Stuff &copy;
   </footer>
 
+  <script>
+    function validateLogin(event) {
+        event.preventDefault();
+
+        // get username & password values
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // check password
+        if (password === 'passwordtest') {
+          // if correct, display welcome
+          alert(`Welcome, ${username}!`);
+        } else {
+          // if incorrect, display error
+          alert('Incorrect password. Please try again.');
+        }
+      }
+  </script>
 </body>
 
 <<<<<<< HEAD
