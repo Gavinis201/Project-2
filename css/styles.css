@@ -10,7 +10,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr 300px;
     gap: 20px;
     height: 200vh;
     background-color: var(--primary);
@@ -32,13 +32,11 @@
   .left-side {
     background: var(--secondary);
     border-radius: 20px;
-    width: auto;
     
   }
   .right-side {
     background: var(--secondary);
     border-radius: 20px;
-    width: auto;
     
   }
   
