@@ -643,11 +643,39 @@ box-shadow: yellow;
 >>>>>>> bc894ee (fixed the hightlights 2x3 grid!)
 =======
 }
+
+.king4{
+  height: 100%;
+  width: 100%;
+}
+
 .sports-container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
   gap: 20px;
+<<<<<<< HEAD
 }
 >>>>>>> 0ef164f (pictures for highlights page)
+=======
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.players{
+  height: 200px;
+  width: 200px;
+}
+.sports-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 20px;
+  padding: 10px;
+  margin-left: 60px;
+}
+>>>>>>> 127ad11 (highlights containers with flex)
