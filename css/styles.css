@@ -492,6 +492,7 @@ box-shadow: yellow;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
@@ -499,6 +500,9 @@ box-shadow: yellow;
 
 
 >>>>>>> 94331fe (added highlights and videos)
+=======
+}
+>>>>>>> 6a9a435 (fix the css for the highlights page)
 .grid-highlights{
   display: grid;
   grid-template-columns: auto auto;
@@ -523,6 +527,7 @@ box-shadow: yellow;
   display: flex;
   justify-content: center;
   margin-left: 40px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 #user-login form {
@@ -579,3 +584,6 @@ box-shadow: yellow;
 =======
 }
 >>>>>>> 3093f8b (index.html touch ups with left-side and right-side info)
+=======
+}
+>>>>>>> 6a9a435 (fix the css for the highlights page)
