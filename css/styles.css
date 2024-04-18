@@ -10,8 +10,8 @@
 
 .grid {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    grid-template-columns: 500px 3fr 500px;
     height: 220vh;
     background-color: var(--primary);
     
@@ -19,7 +19,7 @@
   .grid-stats{
     display: grid;
     gap: 20px;
-    grid-template-columns: 500px 3fr 500px;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 120vh;
     background-color: var(--primary);
     
