@@ -30,17 +30,18 @@ fetch("https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData")
         
         document.getElementById("team-name").innerHTML = selectedTeam["name"];
         document.getElementById("record-number").innerHTML = selectedTeam["current_record"];
-        document.getElementById("points-number").innerHTML = Math.floor(selectedTeam.statistics.avgPoints.value);
-        document.getElementById("fg-number").innerHTML = selectedTeam.statistics.fieldGoalPct.value.toFixed(2) + "%";
-        document.getElementById("tp-number").innerHTML = selectedTeam.statistics.threePointPct.value.toFixed(2) + "%";
-        document.getElementById("ft-number").innerHTML = selectedTeam.statistics.freeThrowPct.value.toFixed(2) + "%";
-        document.getElementById("rebound-number").innerHTML = Math.floor(selectedTeam.statistics.avgRebounds.value);
-        document.getElementById("assist-number").innerHTML = Math.floor(selectedTeam.statistics.avgAssists.value);
-        document.getElementById("turnover-number").innerHTML = Math.floor(selectedTeam.statistics.avgTurnovers.value);
-        document.getElementById("atr-number").innerHTML = selectedTeam.statistics.assistTurnoverRatio.value.toFixed(2);
-        document.getElementById("block-number").innerHTML = Math.floor(selectedTeam.statistics.avgBlocks.value);
-        document.getElementById("steal-number").innerHTML = Math.floor(selectedTeam.statistics.avgSteals.value);
-        
+        document.getElementById("points-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgPoints.value);
+        document.getElementById("fg-number").innerHTML = ":  " + selectedTeam.statistics.fieldGoalPct.value.toFixed(2) + "%";
+        document.getElementById("tp-number").innerHTML = ":  " + selectedTeam.statistics.threePointPct.value.toFixed(2) + "%";
+        document.getElementById("ft-number").innerHTML = ":  " + selectedTeam.statistics.freeThrowPct.value.toFixed(2) + "%";
+        document.getElementById("rebound-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgRebounds.value);
+        document.getElementById("assist-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgAssists.value);
+        document.getElementById("turnover-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgTurnovers.value);
+        document.getElementById("atr-number").innerHTML = ":  " + selectedTeam.statistics.assistTurnoverRatio.value.toFixed(2);
+        document.getElementById("block-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgBlocks.value);
+        document.getElementById("steal-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgSteals.value);
+        document.getElementById("img1").src = selectedTeam.logo_light;
+        document.getElementById("img2").src = selectedTeam.logo_light;
         
         // Reset the innerHTML of the table each time before you run it
         document.getElementById("content-table").innerHTML = tableData;

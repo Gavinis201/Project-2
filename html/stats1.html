@@ -88,44 +88,60 @@
             players name <span>(position)</span>
           </div>
         </div>
-       
+        
       </section>
-    <!--  FAVORITE SPORTS TEAMS -->
-  <section class="sports">
-    <div class="dropdown content-button card-title">
-      <button id="thismaybe" class="btn btn-secondary dropdown-toggle mt-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Select a team
-      </button>
-      <ul id="team-dropdown" style="z-index: 50000" class="dropdown-menu"></ul>
-    </div>
-    <h2 id="team-name"></h2>
-    <h2 id="record-number"></h2>
-    
-    <div class="sports-container">
-      <div class="images">
-          <div class="card-1">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Home Team</th>
-                  <th scope="col">-VS-</th>
-                  <th scope="col">Away Team</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"></th>
-                  <td>Mark</td>
-                  <td></td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row"></th>
-                  <td>Jacob</td>
-                  <td></td>
-                  <td>@fat</td>
-                </tr>
+      <!--  FAVORITE SPORTS TEAMS -->
+      <section class="sports">
+        <div class="dropdown content-button card-title">
+          <button id="thismaybe" class="btn btn-secondary dropdown-toggle mt-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select a team
+          </button>
+          <ul id="team-dropdown" style="z-index: 50000" class="dropdown-menu"></ul>
+        </div>
+
+        <div id="team-title" class="card">
+          <div id="help" class="card-body">
+            <img id="img1" class="teamnameimg" src="../assets/basketball.png">
+            <div id="title-text">
+              <h1 class="card-title" id="team-name">Team Name</h1>
+              <h1 class="card-title" id="record-number">0-0</h1>
+            </div>
+            <img id="img2" class="teamnameimg" src="../assets/basketball.png">
+          </div>
+        </div>
+
+        <div class="card record">
+          <div class="card-body justify-content-center text-center">
+            <h5 class="card-title">Record over Past 5 Games</h5>
+            <h1 class="card-text"><span id="random-id">5 - 0</span></h1>
+          </div>
+        </div>
+        
+        <div class="sports-container">
+          <div class="images">
+            <div class="card-1">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Home Team</th>
+                    <th scope="col">-VS-</th>
+                    <th scope="col">Away Team</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>Mark</td>
+                    <td></td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>Jacob</td>
+                    <td></td>
+                    <td>@fat</td>
+                  </tr>
                 <tr>
                   <th scope="row"></th>
                   <td colspan="2">Larry the Bird</td>
@@ -253,12 +269,6 @@
           </div>
       </div>
       <!-- last 5 game record -->
-      <div class="card record">
-        <div class="card-body">
-          <h5 class="card-title ">Last 5 Game Record</h5>
-          <p class="card-text record-text"><span id="random-id">5 - 0 </span></p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -268,64 +278,61 @@
       <h3>Team Facts</h3>
       <div class="card">
         <div class="card-body players-margin">
-          Points per Game: <span id="points-number"></span>
+          Points per Game<span id="points-number">:  0</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Field Goal Ratio: <span id="fg-number"></span>
+          Field Goal Ratio<span id="fg-number">:  0%</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Three-Point Ratio: <span id="tp-number"></span>
+          Three-Point Ratio<span id="tp-number">:  0%</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Free Throw Ratio: <span id="ft-number"></span>
+          Free Throw Ratio<span id="ft-number">:  0%</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Rebounds per Game: <span id="rebound-number"></span>
+          Rebounds per Game<span id="rebound-number">:  0</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Assists per Game: <span id="assist-number"></span>
+          Assists per Game<span id="assist-number">:  0</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Turnovers per Game: <span id="turnover-number"></span>
+          Turnovers per Game<span id="turnover-number">:  0</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Assist-Turnover Ratio: <span id="atr-number"></span>
+          Assist-Turnover Ratio<span id="atr-number">:  0%</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Blocks per game: <span id="block-number"></span>
+          Blocks per game<span id="block-number">:  0</span>
         </div>
       </div>
       <div class="card">
         <div class="card-body players-margin">
-          Steals per Game: <span id="steal-number"></span>
+          Steals per Game<span id="steal-number">:  0</span>
         </div>
       </div>
 
     </section>
 </div>
 <!-- FOOTER -->
-<footer class="  border-success  p-3 footer-index">
-  Sports N' Stuff &copy;
+<footer class="border-success fixed-bottom p-3 footer-index">
+  Sports N' Stuff &copy 2024
 </footer>
-<!-- at the top  of this page there will be a tab to click called stats where the user can go and see the stats from the sports and stuff api -->
-
-
 
 </body>
 </html>
