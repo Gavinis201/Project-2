@@ -567,6 +567,7 @@ box-shadow: yellow;
   margin-left: 40px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 #user-login form {
   display: flex;
@@ -625,3 +626,9 @@ box-shadow: yellow;
 =======
 }
 >>>>>>> 6a9a435 (fix the css for the highlights page)
+=======
+}
+#user-login form {
+  display: flex;
+}
+>>>>>>> 81e9cf2 (password display)
