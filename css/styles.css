@@ -586,6 +586,7 @@ box-shadow: yellow;
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 }
 
 .king4{
@@ -636,3 +637,6 @@ box-shadow: yellow;
   display: flex;
 }
 >>>>>>> 81e9cf2 (password display)
+=======
+}
+>>>>>>> bc894ee (fixed the hightlights 2x3 grid!)
