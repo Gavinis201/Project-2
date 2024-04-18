@@ -162,6 +162,85 @@ box-shadow: yellow;
 
 
 
+  h1{
+  display: flex;
+  justify-content: center;
+}
+h3{
+  display: flex;
+  justify-content: center;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+
+.card-img-top:hover{
+box-shadow: yellow;
+}
+
+.warriors{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nba-logo:hover {
+  animation: popUp 1s ease-in-out forwards;
+}
+
+@keyframes popUp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+.card-photo{
+  background-color: white;
+  height: 200px;
+}
+.lebron {
+  aspect-ratio: 11 / 9;
+  height: 270px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.footer-index{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  height: 10vh;
+}
+.footer-stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary); 
+  color: white;
+  margin-top: 80vh;
+}
+
+
+.ballers{
+  padding: 2em;
+  height: 550px;
+  width: 90%;
+  box-shadow: 5px 5px 10px;
+  
+
+}
+
+
+
+
 
 
 
@@ -283,32 +362,4 @@ box-shadow: yellow;
   display: flex;
   justify-content: center;
   font-size: 5em;
-}
-/* HIGHLIGHTS PAGE CSS */
-
-
-.grid-highlights{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 1fr 500px 500px;
-}
-.king {
-  background-color: var(--secondary);
-  border: 1px solid black;
-}
-
-.king1{
-  grid-column: 1 / 3;
-  height: 10vh;
-}
-
-
-.lebron.size{
-  width: 720px;
-  height: 620px;
-}
-.video{
-  display: flex;
-  justify-content: center;
-  margin-left: 40px;
 }
