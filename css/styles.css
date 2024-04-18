@@ -20,14 +20,13 @@
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 120vh;
+    height: 100vh;
     background-color: var(--primary);
     
   }
   .sports {
     background: var(--secondary);
     border-radius: 20px;
-    width: 800px;
     
   }
   .left-side {
@@ -204,6 +203,8 @@ box-shadow: yellow;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
 }
 
 @keyframes popUp {
