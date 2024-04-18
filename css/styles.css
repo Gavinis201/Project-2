@@ -19,6 +19,7 @@ h3 {
 
 .grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 300px 1fr 300px;
     gap: 20px;
 <<<<<<< HEAD
@@ -33,6 +34,10 @@ h3 {
 =======
     grid-template-columns: 500px 3fr 500px;
 >>>>>>> 94331fe (added highlights and videos)
+=======
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+>>>>>>> 877acdf (fixing the grid for all the pages)
     height: 220vh;
 >>>>>>> c28ade5 (footer edit height)
     background-color: var(--primary);
@@ -43,6 +48,7 @@ h3 {
     gap: 20px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
     height: 200vh;
 =======
@@ -50,6 +56,9 @@ h3 {
 =======
     grid-template-columns: 500px 3fr 500px;
 >>>>>>> 94331fe (added highlights and videos)
+=======
+    grid-template-columns: 1fr 1fr 1fr;
+>>>>>>> 877acdf (fixing the grid for all the pages)
     height: 120vh;
 >>>>>>> 63b1e54 (finished the css for the stats page)
     background-color: var(--primary);
