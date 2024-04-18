@@ -587,6 +587,7 @@ box-shadow: yellow;
   justify-content: center;
   align-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .king4{
@@ -640,3 +641,13 @@ box-shadow: yellow;
 =======
 }
 >>>>>>> bc894ee (fixed the hightlights 2x3 grid!)
+=======
+}
+.sports-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+>>>>>>> 0ef164f (pictures for highlights page)
