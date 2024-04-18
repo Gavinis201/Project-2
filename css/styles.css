@@ -59,6 +59,7 @@ h3 {
 <<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 200vh;
 =======
     grid-template-columns: 1fr 3fr 1fr;
@@ -73,6 +74,9 @@ h3 {
 =======
     height: 100vh;
 >>>>>>> 18c4bd6 (fixing the html on the stats1 page)
+=======
+    height: 200vh;
+>>>>>>> 80ec13f (container height on the stats page)
     background-color: var(--primary);
     
   }
