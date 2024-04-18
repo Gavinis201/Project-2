@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c4d321 (Copying Jason's JS over)
 fetch("https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData")
     .then((response) => response.json())
     .then((data) => doTheThingHarold(data));
@@ -69,6 +72,7 @@ function filterData(selectedTeam) {
     console.log(selectedTeam.current_record);
 
 */
+<<<<<<< HEAD
 =======
 fetch (
     "https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData"
@@ -125,3 +129,5 @@ function doTheThingHarold(inputData) {
 
 */
 >>>>>>> 1e3eec8 (progress in js)
+=======
+>>>>>>> 7c4d321 (Copying Jason's JS over)
