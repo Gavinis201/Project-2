@@ -2,36 +2,50 @@ fetch("https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData")
     .then((response) => response.json())
     .then((data) => doTheThingHarold(data));
 
-function doTheThingHarold(inputData) {
-
-    for (let team in inputData) {
-        const item = document.createElement("li");
-        item.classList.add("dropdown-item");
-        item.innerHTML = team;
-        item.addEventListener("click", (function(team) {
-            return function() {
-                filterData(inputData[team]);
-            };
-        })(team));
-
-        const divider = document.createElement("div");
-        divider.classList.add("dropdown-divider");
-
-        document.getElementById("team-dropdown").appendChild(item);
-        document.getElementById("team-dropdown").appendChild(divider);
+    function doTheThingHarold(inputData) {
+        
+        for (let team in inputData) {
+            const item = document.createElement("li");
+            item.classList.add("dropdown-item");
+            item.innerHTML = team;
+            item.addEventListener("click", (function(team) {
+                return function() {
+                    filterData(inputData[team]);
+                };
+            })(team));
+            
+            const divider = document.createElement("div");
+            divider.classList.add("dropdown-divider");
+            
+            document.getElementById("team-dropdown").appendChild(item);
+            document.getElementById("team-dropdown").appendChild(divider);
+        }
     }
-}
-
-// Set a default value for the table as a "reset point" so the old data clears when you select a new team
-const tableData = document.getElementById("content-table").outerHTML;
-
-// Function: you select a team and it will display their roster/stats
-function filterData(selectedTeam) {
-
-    // Reset the innerHTML of the table each time before you run it
-    document.getElementById("content-table").innerHTML = tableData;
-
     
+    // Set a default value for the table as a "reset point" so the old data clears when you select a new team
+    const tableData = document.getElementById("content-table").outerHTML;
+    
+    // Function: you select a team and it will display their roster/stats
+    function filterData(selectedTeam) {
+        
+        document.getElementById("team-name").innerHTML = selectedTeam["name"];
+        document.getElementById("record-number").innerHTML = selectedTeam["current_record"];
+        document.getElementById("points-number").innerHTML = Math.floor(selectedTeam.statistics.avgPoints.value);
+        document.getElementById("fg-number").innerHTML = selectedTeam.statistics.fieldGoalPct.value.toFixed(2) + "%";
+        document.getElementById("tp-number").innerHTML = selectedTeam.statistics.threePointPct.value.toFixed(2) + "%";
+        document.getElementById("ft-number").innerHTML = selectedTeam.statistics.freeThrowPct.value.toFixed(2) + "%";
+        document.getElementById("rebound-number").innerHTML = Math.floor(selectedTeam.statistics.avgRebounds.value);
+        document.getElementById("assist-number").innerHTML = Math.floor(selectedTeam.statistics.avgAssists.value);
+        document.getElementById("turnover-number").innerHTML = Math.floor(selectedTeam.statistics.avgTurnovers.value);
+        document.getElementById("atr-number").innerHTML = selectedTeam.statistics.assistTurnoverRatio.value.toFixed(2);
+        document.getElementById("block-number").innerHTML = Math.floor(selectedTeam.statistics.avgBlocks.value);
+        document.getElementById("steal-number").innerHTML = Math.floor(selectedTeam.statistics.avgSteals.value);
+        
+        
+        // Reset the innerHTML of the table each time before you run it
+        document.getElementById("content-table").innerHTML = tableData;
+        
+        
     for (player in selectedTeam.roster) {
         // Creates a new row for every player in the team
         const thing = document.createElement("tr");
@@ -50,21 +64,7 @@ function filterData(selectedTeam) {
         document.getElementById("content-table").appendChild(thing);
     }
 }
+   
 
-/*
-    
-    document.getElementById("team-name").innerHTML = selectedTeam["name"];
-    document.getElementById("record-number").innerHTML = selectedTeam["current_record"];
-    document.getElementById("rebound-number").innerHTML = selectedTeam.statistics.avgRebounds.value;
-    document.getElementById("point-number").innerHTML = selectedTeam.statistics.avgPoints;
-    document.getElementById("fg-number").innerHTML = selectedTeam.statistics.fieldGoalPct;
-    document.getElementById("tp-number").innerHTML = selectedTeam.statistics.threePointPct;
-    document.getElementById("ft-number").innerHTML = selectedTeam.statistics.freeThrowPct;
-    document.getElementById("assist-number").innerHTML = selectedTeam.statistics.avgAssists;
-    document.getElementById("turnover-number").innerHTML = selectedTeam.statistics.avgTurnovers;
-    document.getElementById("atr-number").innerHTML = selectedTeam.statistics.assistTurnoverRatio;
-    document.getElementById("block-number").innerHTML = selectedTeam.statistics.avgBlocks;
-    document.getElementById("steal-number").innerHTML = selectedTeam.statistics.avgSteals;
-    console.log(selectedTeam.current_record);
-
-*/
+    // 
+    // console.log(selectedTeam.current_record);
