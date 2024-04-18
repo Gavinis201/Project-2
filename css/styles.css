@@ -6,7 +6,16 @@
   --third: white;
 }
 
-
+#everything{
+  position: relative;
+  display: grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 18vh;
+  padding-bottom: 2vh;
+  background-color: #333333;
+  min-height: 1610px;
+}
 
 .grid {
   display: grid;
@@ -27,7 +36,6 @@
 .sports {
   background: var(--secondary);
   border-radius: 20px;
-  
 }
 .left-side {
   background: var(--secondary);
@@ -138,17 +146,8 @@ justify-content: center;
 align-items: center;
 background-color: var(--primary); 
 color: white;
-height: 10vh;
+height: 7vh;
 }
-.footer-stats{
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: var(--primary); 
-color: white;
-margin-top: 80vh;
-}
-
 
 .ballers{
 padding: 2em;
@@ -247,6 +246,8 @@ border-radius: 10px;
   grid-row-start: 3;
   grid-column-start: 2;
   grid-column-end: 5;
+  text-align: center;
+  margin-bottom: 4em;
 }
 
 .spacing {
@@ -278,9 +279,15 @@ height: 30vh;
   margin-left: 20%;
   margin-right: 20%;
 }
+#team-dropdown{
+  max-height: 70vh;
+  overflow: scroll;
+}
 #team-title{
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 3em;
+  border: 5px solid #333333;
 }
 #help{
   display: flex;
@@ -295,11 +302,16 @@ height: 30vh;
   aspect-ratio: 1 / 1;
 }
 .record{
-margin-left: 20%;
-margin-right: 20%;
+margin-left: 5%;
+margin-right: 5%;
 }
-.record-text{
-display: flex;
-justify-content: center;
-font-size: 5em;
+
+.past-game{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.past-game img{
+  width: 50%;
 }

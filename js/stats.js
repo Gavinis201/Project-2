@@ -42,7 +42,7 @@ fetch("https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData")
         document.getElementById("steal-number").innerHTML = ":  " + Math.floor(selectedTeam.statistics.avgSteals.value);
         document.getElementById("img1").src = selectedTeam.logo_light;
         document.getElementById("img2").src = selectedTeam.logo_light;
-        
+
         // Reset the innerHTML of the table each time before you run it
         document.getElementById("content-table").innerHTML = tableData;
         

@@ -117,3 +117,7 @@ you.
     "current_record": "string"
     },
 }
+
+
+
+wrapped body content in flex div, white top n bottom borders for nav n footer, "#everything" in css
