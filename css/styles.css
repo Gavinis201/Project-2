@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    height: 220vh;
+    height: 200vh;
     background-color: var(--primary);
     
   }
@@ -27,24 +27,27 @@
   .sports {
     background: var(--secondary);
     border-radius: 20px;
+    width: 800px;
     
   }
   .left-side {
     background: var(--secondary);
     border-radius: 20px;
+    width: auto;
     
   }
   .right-side {
     background: var(--secondary);
     border-radius: 20px;
+    width: auto;
     
   }
   
   .images{
     display: grid;
-    gap: 30px;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 500px 500px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
     padding: 20px;
     margin: 20px;
     box-sizing: border-box;
@@ -111,14 +114,18 @@ box-shadow: yellow;
   text-decoration: none;
 }
 
+.nba-logo {
+  transition: transform 0.3s ease-in-out;
+}
+
 .nba-logo:hover {
-  animation: popUp 1s ease-in-out forwards;
+  animation: popUp 0.5s ease-in-out forwards;
 }
 
 @keyframes popUp {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-50px); }
-  100% { transform: translateY(0); }
+  0%, 100% { transform: translateY(0); }
+  25%, 75% { transform: translateY(-10px); }
+  50% { transform: translateY(-5px); }
 }
 
 .card-photo{
@@ -191,6 +198,12 @@ box-shadow: yellow;
 
 .nba-logo:hover {
   animation: popUp 1s ease-in-out forwards;
+}
+
+.sports-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 @keyframes popUp {
