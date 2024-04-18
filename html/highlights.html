@@ -16,28 +16,40 @@
   <nav class="navbar navbar-expand-lg  navbar-custom">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><span class="material-symbols-outlined"> </span></a>
-      <img src="../assets/sns white.png" alt="Sports N' Stuff" width=250px>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <a href="./index.html">
+       <img src="../assets/sns white.png" alt="Sports N' Stuff" width=250px>
+     </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse spacing" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link  navbar-nav " aria-current="page" href="index.html">Home</a>
+          <li class="nav-item  ">
+            <a class="nav-link  navbar-nav  " aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  navbar-nav" href="./stats.html">Stats</a>
+          <li class="nav-item  ">
+            <a class="nav-link  navbar-nav " href="./stats.html">Stats</a>
           </li>
           <li class="nav-item">
             <a class="nav-link  navbar-nav" href="./highlights.html">Highlights</a>
           </li>
         </ul>
 
-        <form class="d-flex" role="search">
+        <!-- <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Username" aria-label="Search">
           <input class="form-control me-2" type="search" placeholder="Password" aria-label="Search">
           <a href="./stats.html" class="btn btn-primary button-submit">Login</a>
-        </form>
+        </form> -->
+        <div id="user-login">
+          <form class="d-flex" id="login-form" role="search" onsubmit="return validateLogin(event)">
+            <input class="form-control me-2" type="text" placeholder="Username" aria-label="Search" id="username">
+            <input class="form-control me-2" type="password" placeholder="Password" aria-label="Search" id="password">
+            <button type="submit" class="btn btn-primary button-submit">Login</button>
+          </form>
+          <h3 id="user-email"></h3>
+        </div>
+
       </div>
     </div>
   </nav>
@@ -52,11 +64,11 @@
         </div>
         <div class="king3 king">
             <h1>Lebron James</h1>
-            <video src="../assets/LeBron James' MONSTER alley-oop slam vs Celtics!.mp4" class="video" autoplay muted></video>
+            <video src="../assets/LeBron James' MONSTER alley-oop slam vs Celtics!.mp4" class="video" autoplay muted loop></video>
         </div>
         <div class="king4 king"></div>
         <div class="king5 king"></div>
-        <div class="king6 king"></div>
+        <div class="king6 king">Sports N' Stuff &copy</div>
      </div>
 
 <!-- FOOTER -->
