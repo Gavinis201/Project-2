@@ -43,29 +43,27 @@ fetch("https://alnyb0ty3i.execute-api.us-east-1.amazonaws.com/sportsData")
         document.getElementById("img1").src = selectedTeam.logo_light;
         document.getElementById("img2").src = selectedTeam.logo_light;
 
-        // Reset the innerHTML of the table each time before you run it
-        document.getElementById("content-table").innerHTML = tableData;
-        
-        
+
+
+
+    document.getElementById("content-table").innerHTML = tableData;
     for (player in selectedTeam.roster) {
-        // Creates a new row for every player in the team
         const thing = document.createElement("tr");
-
         for (indStat in selectedTeam.roster[player]) {
-            // Creates a cell for each stat a player has
             const playerstat = document.createElement("td")
-            // That cell's value is the value of the player's stat
             playerstat.innerHTML = selectedTeam.roster[player][indStat];
-
-            // Add the cell to the row
             thing.appendChild(playerstat);
         }
-
-        // Add the row to the table
         document.getElementById("content-table").appendChild(thing);
     }
-}
-   
 
-    // 
-    // console.log(selectedTeam.current_record);
+    for (game in selectedTeam.last_five_games) {
+        console.log(selectedTeam.last_five_games[game]);
+        document.getElementById("hometeam1").innerHTML = selectedTeam.last_five_games[game].home_team.team_name_abbreviation;
+        document.getElementById("awayteam1").innerHTML = selectedTeam.last_five_games[game].away_team.team_name_abbreviation;
+        let hometeam = selectedTeam.last_five_games[game].home_team.team_name;
+        let awayteam = selectedTeam.last_five_games[game].away_team.team_name;
+        document.getElementById("homeimg1").src = [hometeam].name;
+        console.log(document.getElementById("homeimg1").src = [hometeam].name);
+    }
+}
