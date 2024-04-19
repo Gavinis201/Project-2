@@ -120,4 +120,4 @@ you.
 
 
 
-wrapped body content in flex div, white top n bottom borders for nav n footer, "#everything" in css
+wrapped body content in flex div, nav n footer, "#everything" in css

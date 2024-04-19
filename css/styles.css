@@ -23,29 +23,29 @@
   grid-template-columns: 1fr 3fr 1fr;
   height: 220vh;
   background-color: var(--primary);
-  
 }
+
 .grid-stats{
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 3fr 1fr;
   height: 120vh;
   background-color: var(--primary);
-  
 }
+
 .sports {
   background: var(--secondary);
   border-radius: 20px;
 }
+
 .left-side {
   background: var(--secondary);
   border-radius: 20px;
-  
 }
+
 .right-side {
   background: var(--secondary);
   border-radius: 20px;
-  
 }
 
 .images{
@@ -57,23 +57,27 @@
   margin: 20px;
   box-sizing: border-box;
 }
+
 .card-body{
   padding: 20px;
 }
+
 .navbar{
   background-color: var(--primary) !important
 }
+
 .button-stats {
   background-color: var(--primary);
   color: white;
   width: 10em;
   border: none;
 }
+
 .button-stats:hover{
   background-color: white;
   color: var(--primary);
-
 }
+
 .button-submit{
   background-color: white;
   color: var(--primary);
@@ -86,9 +90,9 @@
   color: white;
   border: 1px solid white;
 }
+
 .card{
   margin: 20px;
-
 }
 
 h1{
@@ -154,15 +158,7 @@ padding: 2em;
 height: 550px;
 width: 90%;
 box-shadow: 5px 5px 10px;
-
-
 }
-
-
-
-
-
-
 
 
 /* Stats Page */
@@ -172,15 +168,15 @@ box-shadow: 5px 5px 10px;
   #content{
       margin-left: 2% !important;
       margin-right: 2% !important;
-  }
+    }
 
-  #side-news{
+  .left-side{
       display: none;
- }
+    }
 
- #side-sort{
+  .right-side{
       display: none;
- }
+    }
 }
 
 /*Dunno what styling we want; I'll wait for index and copy that.*/
