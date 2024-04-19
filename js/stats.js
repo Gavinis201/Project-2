@@ -68,3 +68,11 @@ function filterData(selectedTeam) {
     console.log(selectedTeam.current_record);
 
 */
+
+ 
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
