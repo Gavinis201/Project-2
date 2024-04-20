@@ -497,3 +497,11 @@ box-shadow: yellow;
   background-color: var(--secondary);
   color: white;
 }
+.timer{
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary);
+  margin: 0;
+  border-radius: 0;
+  font-size: 25px;
+}
